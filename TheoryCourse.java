@@ -9,13 +9,14 @@ package com.mycompany.university;
  * @author WIN(10)X64
  */
 public class TheoryCourse extends Course {
-
+   //inheritance ==> extend 
     private int numberOfLectures;
-
+//constructor
     public TheoryCourse(String name, int numberOfLectures) {
         super(name);
         this.numberOfLectures = numberOfLectures;
     }
+    //getters/setter
 
     public int getNumberOfLectures() { return numberOfLectures; }
     public void setNumberOfLectures(int numberOfLectures) { this.numberOfLectures = numberOfLectures; }
