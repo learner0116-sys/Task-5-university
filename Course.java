@@ -10,18 +10,17 @@ package com.mycompany.university;
  */
 
 public abstract class Course {
-
+ //abstract class /parent class
     private String name;
-
+//constructor
     public Course(String name) {
         this.name = name;
     }
-
+ //getters
     public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
     public abstract String getType();
-
+    //setter
+    public void setName(String name) { this.name = name; }
     @Override
     public String toString() {
         return "Course: " + name + " | Type: " + getType();
